@@ -1,0 +1,27 @@
+@use '../utils/common.scss' as c;
+
+
+.footer{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  &_logo{
+      width: 122px;
+      height: 40px;
+      padding-bottom: 20px;
+  }
+  &_copyright{
+      font-size: 24px;
+      padding-bottom: 10px;
+  }
+
+}
+
+footer{
+  background-color: c.$third-background-color;
+  color: c.$second-font-color;
+  
+}

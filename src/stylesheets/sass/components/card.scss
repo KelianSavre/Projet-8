@@ -1,0 +1,55 @@
+@use '../utils/common.scss' as c;
+
+.card-container{
+    background-color: c.$second-background-color;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        background-color: c.$main-background-color;
+    }
+
+    .card{
+        width: 100%;
+        height: 340px;
+        border-radius: 10px;
+        position: relative;
+
+        img{
+            object-fit: cover;
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+
+        }
+
+        &_gradient{
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            
+        }
+
+        &_title{
+            position: absolute;
+            bottom: 0;
+            font-size: 18px;
+            color: c.$second-font-color;
+            margin-bottom: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+
+}

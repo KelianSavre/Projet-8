@@ -1,0 +1,57 @@
+@use '../utils/common.scss' as c;
+
+.collapse{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+
+
+    &-active{
+        width: 100%;
+
+        &_container{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            background-color: c.$fourth-background-color;
+            border-radius: 5px;
+            padding-left:20px ;
+            padding-right: 20px;
+            color: c.$second-font-color;
+            margin-top: 30px;  
+        }
+        &_title{
+            font-size: 24px;
+            
+        }
+        &_icon{
+            cursor: pointer;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        &_content{
+            background-color: c.$second-background-color;
+            width: 100%;
+            border-radius: 5px;
+            
+            margin-top: 0;
+            p{
+                padding: 20px;
+                color: c.$main-font-color;
+                font-size: 18px;
+                margin-top: 0;
+            }
+            
+        }
+
+    }
+
+    
+}

@@ -1,0 +1,25 @@
+@use '../utils/common.scss' as c;
+
+.page-not-found{
+    color: c.$main-font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-weight: c.$larger-font-weight;
+        font-size: 288px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: 36px;
+        margin-top: 0px;
+        margin-bottom: 80px;
+    }
+    &_link{
+        color: c.$main-font-color;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+}

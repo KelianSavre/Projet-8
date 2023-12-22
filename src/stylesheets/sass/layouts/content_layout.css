@@ -1,0 +1,21 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  margin: 0px;
+}
+
+#root {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  #root {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=content_layout.css.map */

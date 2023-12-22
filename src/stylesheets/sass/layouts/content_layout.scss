@@ -1,0 +1,29 @@
+@use '../utils/common.scss' as c;
+
+*{
+    font-family: c.$main-font-family;
+    font-weight: c.$main-font-weight;
+}
+
+body{
+    margin: 0px;
+}
+
+#root{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width:768px) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
