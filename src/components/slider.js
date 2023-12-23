@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../stylesheets/sass/components/slider.css'
 
 function Slider({slidesAccomodation}){
 
@@ -28,9 +29,9 @@ function Slider({slidesAccomodation}){
 
             {slidesAccomodation.map((pictures, id)=>{
                 return (
-                    <div key={id} className={'test'/*operateur ternaire a rajouter pour definir si slide active ou non*/ }>
+                    <div key={id} className={'slider_slide'/*operateur ternaire a rajouter pour definir si slide active ou non pourrait etre implemente si on veut rajouter animation*/ }>
                         {id === currentSlide && (
-                            <img src={pictures} alt="Visuels du logement" className="slider_image"></img>
+                            <img src={pictures} alt="Visuels du logement" className="slider_slide-image"></img>
                         )}
                         {id === currentSlide && sliderLength > 1 && (
                             <p className="slider_slide-Number">{currentSlide + 1}/{sliderLength}</p>

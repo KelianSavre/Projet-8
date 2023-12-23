@@ -22,7 +22,7 @@ function NavRouter(){
                     </div>
                     <div>
                         <NavLink className='navbar_link' to='/'>Accueil</NavLink>
-                        <NavLink className='navbar_link' to='/about'>A propos</NavLink>
+                        <NavLink className='navbar_link navbar_link-gap' to='/about'>A propos</NavLink>
                     </div>
 
                 </nav>

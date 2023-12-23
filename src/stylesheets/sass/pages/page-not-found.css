@@ -11,13 +11,29 @@
   margin-top: 50px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .page-not-found h1 {
+    font-size: 96px;
+  }
+}
 .page-not-found h2 {
   font-size: 36px;
   margin-top: 0px;
   margin-bottom: 80px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .page-not-found h2 {
+    font-size: 18px;
+  }
 }
 .page-not-found_link {
   color: #ff6060;
   font-size: 18px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .page-not-found_link {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=page-not-found.css.map */

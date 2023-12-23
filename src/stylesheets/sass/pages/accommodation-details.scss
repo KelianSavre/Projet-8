@@ -1,1 +1,158 @@
 @use '../utils/common.scss' as c;
+
+
+.accomodation-details{
+    
+    &_titles{
+        color: c.$main-font-color;
+        h2{
+            font-size: 36px;
+            margin-bottom: 0;
+            @media screen and (max-width:768px) {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+        h3{
+            font-size: 18px;
+            margin-top: 8px;
+            @media screen and (max-width:768px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &_tags{
+        display: flex;
+        column-gap: 10px;
+    }
+
+
+    &_collapse{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        &-description{
+            width: 48%;
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+    
+        }
+        &-equipments{
+            width: 48%;
+            list-style-type:none ;
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+    
+        }
+
+        .collapse-active_container{
+            height: 52px ;
+            
+            @media screen and (max-width:768px) {
+                height: 30px;
+                margin-top: 15px;
+            }
+        }
+        .collapse-active_title{
+            font-size: 32px;
+            @media screen and (max-width:768px) {
+                font-size: 13px;
+            }
+        }
+        .collapse-active_content{
+            
+            p{
+                @media screen and (max-width:768px) {
+                    font-size: 13px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+            
+        }
+        .collapse-active_icon{
+            @media screen and (max-width:768px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &-rating-host{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            
+            row-gap: 15px;
+            @media screen and (max-width:768px) {
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    &_host{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &-picture{
+            border-radius: 50%;
+            height: 64px;
+            width: 64px;
+            object-fit: cover;
+            @media screen and (max-width:768px) {
+                height: 32px;
+                width: 32px;
+            }
+        }
+        &-name{
+            color: c.$main-font-color;
+            font-size: 18px;
+            margin-right: 15px;
+            text-align: right;
+            width: 93px;
+            @media screen and (max-width:768px) {
+                font-size: 12px;
+            }
+        }
+    }
+    &_rating{
+        display: flex;
+        column-gap: 5px;
+        padding-bottom: 5px;
+        .fa-star{
+            font-size: 32px;
+            @media screen and (max-width:768px) {
+                font-size: 16px;
+            }
+        }
+
+        .rating-negative{
+            color: #e3e3e3; ;
+        }
+        .rating-positive{
+            color: c.$main-font-color;
+        }
+    }
+
+}

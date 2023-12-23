@@ -1,1 +1,160 @@
-/*# sourceMappingURL=accommodation-details.css.map */
+.accomodation-details_titles {
+  color: #ff6060;
+}
+.accomodation-details_titles h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_titles h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+.accomodation-details_titles h3 {
+  font-size: 18px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_titles h3 {
+    font-size: 14px;
+  }
+}
+.accomodation-details_tags {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.accomodation-details_collapse {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_collapse {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.accomodation-details_collapse-description {
+  width: 48%;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_collapse-description {
+    width: 100%;
+  }
+}
+.accomodation-details_collapse-equipments {
+  width: 48%;
+  list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_collapse-equipments {
+    width: 100%;
+  }
+}
+.accomodation-details_collapse .collapse-active_container {
+  height: 52px;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_collapse .collapse-active_container {
+    height: 30px;
+    margin-top: 15px;
+  }
+}
+.accomodation-details_collapse .collapse-active_title {
+  font-size: 32px;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_collapse .collapse-active_title {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_collapse .collapse-active_content p {
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_collapse .collapse-active_icon {
+    font-size: 16px;
+  }
+}
+.accomodation-details_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.accomodation-details_container-rating-host {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  row-gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_container-rating-host {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+}
+.accomodation-details_host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.accomodation-details_host-picture {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_host-picture {
+    height: 32px;
+    width: 32px;
+  }
+}
+.accomodation-details_host-name {
+  color: #ff6060;
+  font-size: 18px;
+  margin-right: 15px;
+  text-align: right;
+  width: 93px;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_host-name {
+    font-size: 12px;
+  }
+}
+.accomodation-details_rating {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  padding-bottom: 5px;
+}
+.accomodation-details_rating .fa-star {
+  font-size: 32px;
+}
+@media screen and (max-width: 768px) {
+  .accomodation-details_rating .fa-star {
+    font-size: 16px;
+  }
+}
+.accomodation-details_rating .rating-negative {
+  color: #e3e3e3;
+}
+.accomodation-details_rating .rating-positive {
+  color: #ff6060;
+}/*# sourceMappingURL=accommodation-details.css.map */

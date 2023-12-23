@@ -1,0 +1,28 @@
+@use '../utils/common.scss' as c;
+
+
+.tags{
+    background-color: c.$fourth-background-color;
+    color: c.$second-font-color;
+    height: 25px;
+    padding: 5px;
+    
+    min-width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    @media screen and (max-width:768px) {
+        height: 18px;
+        min-width: 84px;
+    }
+
+    &-content{
+        font-size: 14px;
+        @media screen and (max-width:768px) {
+            font-size: 10px;
+        }
+    }
+}
+

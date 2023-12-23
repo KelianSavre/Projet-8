@@ -1,0 +1,25 @@
+.tags {
+  background-color: #ff6060;
+  color: #ffffff;
+  height: 25px;
+  padding: 5px;
+  min-width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .tags {
+    height: 18px;
+    min-width: 84px;
+  }
+}
+.tags-content {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .tags-content {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=tags.css.map */
