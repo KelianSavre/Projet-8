@@ -1,5 +1,5 @@
 import React from "react";
-import CardDisplay from "../components/card";
+import CardDisplay from "../components/Card";
 import logements from '../assets/logements.json'
 import Banner from "../components/banner";
 import bannerHome from '../assets/banner_homepage.png'

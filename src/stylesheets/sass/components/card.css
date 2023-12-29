@@ -24,6 +24,7 @@
   height: 340px;
   border-radius: 10px;
   position: relative;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .card-container .card {

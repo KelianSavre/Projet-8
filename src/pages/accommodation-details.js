@@ -12,67 +12,15 @@ function AccommodationDetails(){
     const currentAccomodation = accomodationsArray.find((accommodation)=> accommodation.id === id)
     
    function Rating (rating){
-    if (rating === '1'){
-        return(
-            <>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            </>
-        )
-    }else if(rating === '2'){
-        return(
-            <>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            </>
-        )
-    }else if(rating === '3'){
-        return(
-            <>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            </>
-        )
-    }else if(rating === '4'){
-        return(
-            <>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            </>
-        )
-    }else if(rating === '5'){
-        return(
-            <>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            <i className='fa-solid fa-star rating-positive'></i>
-            </>
-        )
-    }else{
-        return(
-            <>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            <i className='fa-solid fa-star rating-negative'></i>
-            </>
-        )
+    
+    const stars =[]
+
+    for (let i = 1; i <= 5; i++){
+        const starClass = i <= rating ? 'fa-solid fa-star rating-positive' : 'fa-solid fa-star rating-negative'
+        stars.push(<i key={i} className={starClass}></i>)
     }
+    return <>{stars}</>
+
    }
     
     
